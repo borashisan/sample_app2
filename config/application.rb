@@ -23,5 +23,8 @@ module SampleApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Sprockets が app/javascript 配下の JS を認識できるようにする
+    config.assets.paths << Rails.root.join("app/javascript")
   end
 end
